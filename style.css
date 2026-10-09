@@ -27,55 +27,52 @@ body {
   padding: clamp(96px, 19vh, 180px) 0 80px;
 }
 
+/* Unified base size for all voices */
 .entry p {
   margin: 0 0 1.7em;
-  font-size: clamp(1.15rem, 4vw, 1.45rem);
-  line-height: 1.65;
+  font-size: clamp(1.25rem, 4vw, 1.45rem);
+  line-height: 1.6;
 }
 
-.entry .voice-exclaim {
+/* Unique styles (no size differences) */
+.voice-exclaim {
   color: #9a5710;
   font-family: "Bangers", Impact, sans-serif;
-  font-size: clamp(1.75rem, 6vw, 2.25rem);
-  line-height: 1.2;
+  font-weight: 700;
   transform: rotate(-1deg);
 }
 
-.entry .voice-chill {
-  margin-left: 1.75rem;
+.voice-chill {
+  margin-left: 1.5rem;
   color: #315b77;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 500;
 }
 
-.entry .voice-soft {
+.voice-soft {
   margin-left: 1rem;
   color: #82516b;
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: clamp(1.65rem, 5vw, 2rem);
   font-style: italic;
   font-weight: 600;
-  line-height: 1.3;
 }
 
-.entry .voice-dash {
-  margin-left: 3.5rem;
+.voice-dash {
+  margin-left: 2.5rem;
   color: #514d48;
   font-family: "Space Grotesk", sans-serif;
-  font-size: 1.08rem;
-  letter-spacing: 0.035em;
+  letter-spacing: 0.03em;
 }
 
-.entry .voice-plus {
+.voice-plus {
   width: fit-content;
   max-width: 100%;
-  margin-left: 2.5rem;
+  margin-left: 2rem;
   padding: 0.55rem 0.8rem;
   border-left: 2px solid #528466;
   background: #e7eee4;
   color: #315b43;
   font-family: "IBM Plex Mono", monospace;
-  font-size: 0.92rem;
   line-height: 1.5;
 }
 
@@ -89,15 +86,15 @@ body {
     margin-bottom: 1.5em;
   }
 
-  .entry .voice-chill {
+  .voice-chill {
     margin-left: 0.75rem;
   }
 
-  .entry .voice-plus {
+  .voice-plus {
     margin-left: 1rem;
   }
 
-  .entry .voice-dash {
+  .voice-dash {
     margin-left: 1.5rem;
   }
 }
