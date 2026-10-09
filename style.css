@@ -33,28 +33,50 @@ body {
   line-height: 1.65;
 }
 
-.voice-exclaim {
-  color: #855f18;
-  font-weight: 700;
+.entry .voice-exclaim {
+  color: #9a5710;
+  font-family: "Bangers", Impact, sans-serif;
+  font-size: clamp(1.75rem, 6vw, 2.25rem);
+  line-height: 1.2;
+  transform: rotate(-1deg);
 }
 
-.voice-chill {
-  color: #355b79;
+.entry .voice-chill {
+  margin-left: 1.75rem;
+  color: #315b77;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 500;
 }
 
-.voice-soft {
-  color: #86506a;
+.entry .voice-soft {
+  margin-left: 1rem;
+  color: #82516b;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.65rem, 5vw, 2rem);
   font-style: italic;
+  font-weight: 600;
+  line-height: 1.3;
 }
 
-.voice-dash {
-  color: #55504c;
-  font-variant: small-caps;
+.entry .voice-dash {
+  margin-left: 3.5rem;
+  color: #514d48;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.08rem;
+  letter-spacing: 0.035em;
 }
 
-.voice-plus {
-  color: #33634c;
-  font-style: italic;
+.entry .voice-plus {
+  width: fit-content;
+  max-width: 100%;
+  margin-left: 2.5rem;
+  padding: 0.55rem 0.8rem;
+  border-left: 2px solid #528466;
+  background: #e7eee4;
+  color: #315b43;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.92rem;
+  line-height: 1.5;
 }
 
 @media (max-width: 480px) {
@@ -65,5 +87,17 @@ body {
 
   .entry p {
     margin-bottom: 1.5em;
+  }
+
+  .entry .voice-chill {
+    margin-left: 0.75rem;
+  }
+
+  .entry .voice-plus {
+    margin-left: 1rem;
+  }
+
+  .entry .voice-dash {
+    margin-left: 1.5rem;
   }
 }
