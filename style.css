@@ -116,7 +116,6 @@ s, del, .strike {
   text-decoration-color: rgba(48, 46, 42, 0.7);
 }
 
-
 @media (max-width: 480px) {
   .container {
     width: min(100% - 40px, 620px);
@@ -127,15 +126,15 @@ s, del, .strike {
     margin-bottom: 1.5em;
   }
 
-  .voice-chill {
+  .voice-blue {
     margin-left: 0.75rem;
   }
 
-  .voice-plus {
+  .voice-pink {
     margin-left: 1rem;
   }
 
-  .voice-dash {
+  .voice-black {
     margin-left: 1.5rem;
   }
 }
