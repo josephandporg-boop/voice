@@ -27,53 +27,56 @@ body {
   padding: clamp(96px, 19vh, 180px) 0 80px;
 }
 
-/* Unified base size for all voices */
+/* Unified base size and font for all voices */
 .entry p {
   margin: 0 0 1.7em;
   font-size: clamp(1.25rem, 4vw, 1.45rem);
   line-height: 1.6;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-/* Unique styles (no size differences) */
+/* Different colors with faint gradient */
 .voice-exclaim {
   color: #9a5710;
-  font-family: "Bangers", Impact, sans-serif;
-  font-weight: 700;
-  transform: rotate(-1deg);
+  background: linear-gradient(90deg, rgba(154, 87, 16, 0.12), rgba(154, 87, 16, 0.02));
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .voice-chill {
   margin-left: 1.5rem;
   color: #315b77;
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 500;
+  background: linear-gradient(90deg, rgba(49, 91, 119, 0.12), rgba(49, 91, 119, 0.02));
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .voice-soft {
   margin-left: 1rem;
   color: #82516b;
-  font-family: "Cormorant Garamond", Georgia, serif;
-  font-style: italic;
-  font-weight: 600;
+  background: linear-gradient(90deg, rgba(130, 81, 107, 0.12), rgba(130, 81, 107, 0.02));
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .voice-dash {
   margin-left: 2.5rem;
   color: #514d48;
-  font-family: "Space Grotesk", sans-serif;
-  letter-spacing: 0.03em;
+  background: linear-gradient(90deg, rgba(81, 77, 72, 0.12), rgba(81, 77, 72, 0.02));
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .voice-plus {
   width: fit-content;
   max-width: 100%;
   margin-left: 2rem;
-  padding: 0.55rem 0.8rem;
-  border-left: 2px solid #528466;
-  background: #e7eee4;
   color: #315b43;
-  font-family: "IBM Plex Mono", monospace;
-  line-height: 1.5;
+  background: linear-gradient(90deg, rgba(49, 91, 67, 0.12), rgba(49, 91, 67, 0.02));
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 @media (max-width: 480px) {
