@@ -11,22 +11,48 @@
 </head>
 
 <body>
-  <main class="container">
-    <article class="entry" aria-label="A warm greeting">
-      <p class="voice-exclaim">“Hey!”</p>
-      <p class="voice-chill">‘Whats up!’</p>
-      <p class="voice-plus">+How are we doing?+</p>
-      <p class="voice-dash">-wasaa-</p>
-      <p class="voice-soft">*heyy*</p>
-    </article>
-    
-    <article class="entry" aria-label="Conversation">
-      <p class="voice-exclaim">“soo... how are you guys doing on this fine day?”</p>
-      <p class="voice-chill">‘I'm doing alright, hbu?’</p>
-      <p class="voice-plus">+Doing well.+</p>
-      <p class="voice-dash">-I'm good.-</p>
-      <p class="voice-soft">*feelin good.*</p>
-    </article>
+  <main class="container" id="entries-container">
+    <! -- stuff goes here. -->
   </main>
+// lowkey their names could be Copper, Wave, Sage, Burn, and Vixen, or they could be just the colors. i think ill do colors for now.
+  <script>
+    const voiceEntries = [
+      {
+        label: "A warm greeting",
+        orange: "“Hey!”",
+        blue: "‘Whats up!’",
+        green: "+How are we doing?+",
+        black: "-wasaa-",
+        pink: "*heyy*"
+      },
+      {
+        label: "Conversation",
+        orange: "“soo... how are you guys doing on this fine day?”",
+        blue: "‘I'm doing alright, hbu?’",
+        green: "+Doing well.+",
+        black: "-I'm good.-",
+        pink: "*feelin good.*"
+      }
+    ];
+
+    // --- render funct
+    const container = document.getElementById('entries-container');
+
+    voiceEntries.forEach(item => {
+      const article = document.createElement('article');
+      article.className = 'entry';
+      article.setAttribute('aria-label', item.label);
+
+      article.innerHTML = `
+        <p class="voice-orange">${item.orange}</p>
+        <p class="voice-blue">${item.blue}</p>
+        <p class="voice-green">${item.green}</p>
+        <p class="voice-black">${item.black}</p>
+        <p class="voice-pink">${item.pink}</p>
+      `;
+
+      container.appendChild(article);
+    });
+  </script>
 </body>
 </html>
