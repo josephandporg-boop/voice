@@ -105,7 +105,7 @@ s, del, .strike {
   position: relative;
   display: inline-block;
   text-decoration: none;
-  
+}   
 s::after, del::after, .strike::after {
   content: "";
   position: absolute;
