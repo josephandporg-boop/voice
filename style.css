@@ -27,7 +27,6 @@ body {
   padding: clamp(96px, 19vh, 180px) 0 80px;
 }
 
-/* Unified base size and font for all voices */
 .entry p {
   margin: 0 0 1.7em;
   font-size: clamp(1.25rem, 4vw, 1.45rem);
@@ -37,7 +36,6 @@ body {
   font-style: normal;
 }
 
-/* Keyframe animations */
 @keyframes colorFade {
   0%, 100% { color: #b85d38; }
   50% { color: #ffb703; }
@@ -65,18 +63,17 @@ body {
 
 @keyframes strikeGlow {
   0%, 100% {
-    opacity: 0.8;
-    transform: scaleX(1);
+    opacity: 0.75;
+    transform: scaleX(1) rotate(-2deg);
     filter: drop-shadow(0 0 0 rgba(48, 46, 42, 0));
   }
   50% {
     opacity: 1;
-    transform: scaleX(1.04);
-    filter: drop-shadow(0 0 4px rgba(184, 93, 56, 0.6));
+    transform: scaleX(1.04) rotate(-2deg);
+    filter: drop-shadow(0 0 6px rgba(184, 93, 56, 0.6));
   }
 }
 
-/* Animated colors without movement */
 .voice-orange {
   animation: colorFade 5s ease-in-out infinite;
 }
@@ -105,25 +102,28 @@ s, del, .strike {
   position: relative;
   display: inline-block;
   text-decoration: none;
-}   
-s, del, .strike {
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
 }
 
 s::after, del::after, .strike::after {
   content: "";
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 45%;
-  height: 8px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 6' width='16' height='6'%3E%3Cpath d='M0 6 L4 0 L8 6 L12 0 L16 6' fill='none' stroke='%23ffffff' stroke-width='1.5'/%3E%3C/svg%3E");
-  background-repeat: repeat-x;
-  background-size: 16px 6px;
-  mix-blend-mode: difference;
-  pointer-events: none;
+  left: -0.08em;
+  right: -0.08em;
+  top: 52%;
+  height: 0.18em;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    rgba(48, 46, 42, 0),
+    rgba(48, 46, 42, 0.9) 15%,
+    rgba(184, 93, 56, 0.85) 50%,
+    rgba(48, 46, 42, 0.9) 85%,
+    rgba(48, 46, 42, 0)
+  );
+  box-shadow: 0 0 8px rgba(184, 93, 56, 0.55), 0 0 2px rgba(48, 46, 42, 0.8);
+  transform: rotate(-2deg);
+  transform-origin: center;
+  animation: strikeGlow 2.5s ease-in-out infinite;
 }
 
 @media (max-width: 480px) {
