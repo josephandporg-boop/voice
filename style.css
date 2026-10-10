@@ -37,36 +37,66 @@ body {
   font-style: normal;
 }
 
-/* Vibrant gradients */
+/* Keyframe animations */
+@keyframes shiftGradient {
+  0% { background-position: 0% center; }
+  50% { background-position: 100% center; }
+  100% { background-position: 0% center; }
+}
+
+@keyframes fadeColor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+@keyframes diagonalShift {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
+}
+
+@keyframes hueShift {
+  0% { filter: hue-rotate(0deg); }
+  50% { filter: hue-rotate(15deg); }
+  100% { filter: hue-rotate(0deg); }
+}
+
+@keyframes cycleGradient {
+  0% { background-position: 0% center; }
+  50% { background-position: 100% center; }
+  100% { background-position: 0% center; }
+}
+
+/* Animated gradients */
 .voice-exclaim {
   color: transparent;
-  background: linear-gradient(90deg, rgba(154, 87, 16, 0.6), rgba(255, 140, 0, 0.4));
+  background: linear-gradient(90deg, rgba(154, 87, 16, 0.8), rgba(255, 140, 0, 0.4), rgba(154, 87, 16, 0.8));
+  background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
+  animation: shiftGradient 8s ease-in-out infinite;
 }
 
 .voice-chill {
   margin-left: 1.5rem;
-  color: transparent;
-  background: linear-gradient(90deg, rgba(49, 91, 119, 0.6), rgba(70, 130, 180, 0.4));
-  -webkit-background-clip: text;
-  background-clip: text;
+  color: #315b77;
+  animation: fadeColor 6s ease-in-out infinite;
 }
 
 .voice-soft {
   margin-left: 1rem;
   color: transparent;
-  background: linear-gradient(90deg, rgba(130, 81, 107, 0.6), rgba(199, 102, 145, 0.4));
+  background: linear-gradient(135deg, rgba(130, 81, 107, 0.9), rgba(199, 102, 145, 0.4), rgba(130, 81, 107, 0.9));
+  background-size: 200% 200%;
   -webkit-background-clip: text;
   background-clip: text;
+  animation: diagonalShift 10s ease-in-out infinite;
 }
 
 .voice-dash {
   margin-left: 2.5rem;
-  color: transparent;
-  background: linear-gradient(90deg, rgba(81, 77, 72, 0.6), rgba(120, 110, 100, 0.4));
-  -webkit-background-clip: text;
-  background-clip: text;
+  color: #514d48;
+  animation: hueShift 12s ease-in-out infinite;
 }
 
 .voice-plus {
@@ -74,9 +104,11 @@ body {
   max-width: 100%;
   margin-left: 2rem;
   color: transparent;
-  background: linear-gradient(90deg, rgba(49, 91, 67, 0.6), rgba(85, 170, 120, 0.4));
+  background: linear-gradient(90deg, rgba(49, 91, 67, 0.9), rgba(85, 170, 120, 0.5), rgba(49, 91, 67, 0.9));
+  background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
+  animation: cycleGradient 7s ease-in-out infinite;
 }
 
 @media (max-width: 480px) {
