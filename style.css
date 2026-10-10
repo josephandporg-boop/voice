@@ -110,6 +110,13 @@ body {
   animation: cycleGradient 6s ease-in-out infinite;
 }
 
+s, del, .strike {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  text-decoration-color: rgba(48, 46, 42, 0.7);
+}
+
+
 @media (max-width: 480px) {
   .container {
     width: min(100% - 40px, 620px);
