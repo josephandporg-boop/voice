@@ -67,7 +67,7 @@ body {
 }
 
 /* Animated gradients & effects */
-.voice-exclaim {
+.voice-orange {
   color: transparent;
   background: linear-gradient(90deg, #b85d38, #ffb703, #b85d38);
   background-size: 250% auto;
@@ -76,13 +76,13 @@ body {
   animation: shiftGradient 5s ease-in-out infinite;
 }
 
-.voice-chill {
+.voice-blue {
   margin-left: 1.5rem;
   color: #1b4965;
   animation: fadeColor 5s ease-in-out infinite;
 }
 
-.voice-soft {
+.voice-green {
   margin-left: 1rem;
   color: transparent;
   background: linear-gradient(135deg, #7b325c, #e07a5f, #7b325c);
@@ -92,13 +92,13 @@ body {
   animation: diagonalShift 6s ease-in-out infinite;
 }
 
-.voice-dash {
+.voice-black {
   margin-left: 2.5rem;
   color: #4a453f;
   animation: colorPulse 7s ease-in-out infinite;
 }
 
-.voice-plus {
+.voice-pink {
   width: fit-content;
   max-width: 100%;
   margin-left: 2rem;
