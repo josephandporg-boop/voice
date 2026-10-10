@@ -38,76 +38,54 @@ body {
 }
 
 /* Keyframe animations */
-@keyframes shiftGradient {
-  0% { background-position: 0% center; }
-  50% { background-position: 100% center; }
-  100% { background-position: 0% center; }
+@keyframes colorFade {
+  0%, 100% { color: #b85d38; }
+  50% { color: #ffb703; }
 }
 
-@keyframes fadeColor {
+@keyframes blueFade {
   0%, 100% { color: #1b4965; }
   50% { color: #62b6cb; }
 }
 
-@keyframes diagonalShift {
-  0% { background-position: 0% 0%; }
-  50% { background-position: 100% 100%; }
-  100% { background-position: 0% 0%; }
+@keyframes greenFade {
+  0%, 100% { color: #2d6a4f; }
+  50% { color: #52b788; }
 }
 
-@keyframes colorPulse {
+@keyframes blackFade {
   0%, 100% { color: #4a453f; }
-  50% { color: #b85d38; }
+  50% { color: #7a7370; }
 }
 
-@keyframes cycleGradient {
-  0% { background-position: 0% center; }
-  50% { background-position: 100% center; }
-  100% { background-position: 0% center; }
+@keyframes pinkFade {
+  0%, 100% { color: #7b325c; }
+  50% { color: #e07a5f; }
 }
 
-/* Animated gradients & effects */
+/* Animated colors without movement */
 .voice-orange {
-  color: transparent;
-  background: linear-gradient(90deg, #b85d38, #ffb703, #b85d38);
-  background-size: 250% auto;
-  -webkit-background-clip: text;
-  background-clip: text;
-  animation: shiftGradient 5s ease-in-out infinite;
+  animation: colorFade 5s ease-in-out infinite;
 }
 
 .voice-blue {
   margin-left: 1.5rem;
-  color: #1b4965;
-  animation: fadeColor 5s ease-in-out infinite;
+  animation: blueFade 5s ease-in-out infinite;
 }
 
 .voice-green {
   margin-left: 1rem;
-  color: transparent;
-  background: linear-gradient(90deg, #2d6a4f, #52b788, #2d6a4f);
-  background-size: 250% auto;
-  -webkit-background-clip: text;
-  background-clip: text;
-  animation: cycleGradient 6s ease-in-out infinite;
+  animation: greenFade 6s ease-in-out infinite;
 }
 
 .voice-black {
   margin-left: 2.5rem;
-  color: #4a453f;
-  animation: colorPulse 7s ease-in-out infinite;
+  animation: blackFade 7s ease-in-out infinite;
 }
 
 .voice-pink {
-  width: fit-content;
-  max-width: 100%;
   margin-left: 2rem;
-  color: transparent;
-  background: linear-gradient(135deg, #7b325c, #e07a5f, #7b325c);
-  background-size: 250% 250%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  animation: diagonalShift 6s ease-in-out infinite;
+  animation: pinkFade 6s ease-in-out infinite;
 }
 
 s, del, .strike {
