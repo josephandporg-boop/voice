@@ -37,34 +37,34 @@ body {
   font-style: normal;
 }
 
-/* Different colors with faint gradient */
+/* Vibrant gradients */
 .voice-exclaim {
-  color: #9a5710;
-  background: linear-gradient(90deg, rgba(154, 87, 16, 0.12), rgba(154, 87, 16, 0.02));
+  color: transparent;
+  background: linear-gradient(90deg, rgba(154, 87, 16, 0.6), rgba(255, 140, 0, 0.4));
   -webkit-background-clip: text;
   background-clip: text;
 }
 
 .voice-chill {
   margin-left: 1.5rem;
-  color: #315b77;
-  background: linear-gradient(90deg, rgba(49, 91, 119, 0.12), rgba(49, 91, 119, 0.02));
+  color: transparent;
+  background: linear-gradient(90deg, rgba(49, 91, 119, 0.6), rgba(70, 130, 180, 0.4));
   -webkit-background-clip: text;
   background-clip: text;
 }
 
 .voice-soft {
   margin-left: 1rem;
-  color: #82516b;
-  background: linear-gradient(90deg, rgba(130, 81, 107, 0.12), rgba(130, 81, 107, 0.02));
+  color: transparent;
+  background: linear-gradient(90deg, rgba(130, 81, 107, 0.6), rgba(199, 102, 145, 0.4));
   -webkit-background-clip: text;
   background-clip: text;
 }
 
 .voice-dash {
   margin-left: 2.5rem;
-  color: #514d48;
-  background: linear-gradient(90deg, rgba(81, 77, 72, 0.12), rgba(81, 77, 72, 0.02));
+  color: transparent;
+  background: linear-gradient(90deg, rgba(81, 77, 72, 0.6), rgba(120, 110, 100, 0.4));
   -webkit-background-clip: text;
   background-clip: text;
 }
@@ -73,8 +73,8 @@ body {
   width: fit-content;
   max-width: 100%;
   margin-left: 2rem;
-  color: #315b43;
-  background: linear-gradient(90deg, rgba(49, 91, 67, 0.12), rgba(49, 91, 67, 0.02));
+  color: transparent;
+  background: linear-gradient(90deg, rgba(49, 91, 67, 0.6), rgba(85, 170, 120, 0.4));
   -webkit-background-clip: text;
   background-clip: text;
 }
