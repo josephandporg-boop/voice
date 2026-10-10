@@ -6,7 +6,7 @@
   <title>Voices</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Cormorant+Garamond:ital,wght@1,600&family=IBM+Plex+Mono:wght@400;500&family=Nunito+Sans:wght@400;500&family=Space+Grotesk:wght@400[...]
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Cormorant+Garamond:ital,wght@1,600&family=IBM+Plex+Mono:wght@400;500&family=Nunito+Sans:wght@400;500&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,26 +14,27 @@
   <main class="container" id="entries-container">
     <!-- stuff goes here. -->
   </main>
-<!-- lowkey their names could be Copper, Wave, Sage, Burn, and Vixen, or they could be just the colors. i think ill do colors for now. -->
+
   <script>
     const voiceEntries = [
       {
         label: "A warm greeting",
-        orange: ""Hey!"",
-        blue: "'Whats up!'",
+        orange: "“Hey!”",
+        blue: "‘Whats up!’",
         green: "+How are we doing?+",
         black: "-wasaa-",
         pink: "*heyy*"
       },
       {
         label: "Conversation",
-        orange: ""soo... how are you guys doing on this fine day?"",
-        blue: "'I'm doing <span class=\"strike\">terrible</span> alright, hbu?'",
+        orange: "“soo... how are you guys doing on this fine day?”",
+        blue: "‘I'm doing <span class=\"strike\">terrible</span> alright, hbu?’",
         green: "+Doing well.+",
         black: "-I'm good.-",
         pink: "*feelin good.*"
       }
     ];
+
     const container = document.getElementById('entries-container');
 
     voiceEntries.forEach(item => {
