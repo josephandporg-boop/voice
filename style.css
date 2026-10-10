@@ -76,24 +76,38 @@ body {
   animation: shiftGradient 5s ease-in-out infinite;
 }
 
-.voice-orange {
-  color: #b85d38;
-}
-
-.voice-blue {
+.voice-chill {
+  margin-left: 1.5rem;
   color: #1b4965;
+  animation: fadeColor 5s ease-in-out infinite;
 }
 
-.voice-green {
-  color: #2d6a4f;
+.voice-soft {
+  margin-left: 1rem;
+  color: transparent;
+  background: linear-gradient(135deg, #7b325c, #e07a5f, #7b325c);
+  background-size: 250% 250%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: diagonalShift 6s ease-in-out infinite;
 }
 
-.voice-black {
+.voice-dash {
+  margin-left: 2.5rem;
   color: #4a453f;
+  animation: colorPulse 7s ease-in-out infinite;
 }
 
-.voice-pink {
-  color: #e07a5f;
+.voice-plus {
+  width: fit-content;
+  max-width: 100%;
+  margin-left: 2rem;
+  color: transparent;
+  background: linear-gradient(90deg, #2d6a4f, #52b788, #2d6a4f);
+  background-size: 250% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: cycleGradient 6s ease-in-out infinite;
 }
 
 s, del, .strike {
