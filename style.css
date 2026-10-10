@@ -103,10 +103,9 @@ body {
 
 s, del, .strike {
   position: relative;
-  text-decoration: none;
   display: inline-block;
-}
-
+  text-decoration: none;
+  
 s::after, del::after, .strike::after {
   content: "";
   position: absolute;
@@ -127,6 +126,7 @@ s::after, del::after, .strike::after {
   transform: rotate(-2deg);
   transform-origin: center;
   animation: strikeGlow 2.5s ease-in-out infinite;
+  pointer-events: none; 
 }
 
 @media (max-width: 480px) {
