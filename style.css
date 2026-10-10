@@ -45,8 +45,8 @@ body {
 }
 
 @keyframes fadeColor {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.6; }
+  0%, 100% { color: #315b77; }
+  50% { color: rgba(49, 91, 119, 0.5); }
 }
 
 @keyframes diagonalShift {
